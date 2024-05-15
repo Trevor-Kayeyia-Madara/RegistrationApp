@@ -54,3 +54,62 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  input {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  button {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .App {
+    padding: 5px;
+  }
+
+  input {
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  button {
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
