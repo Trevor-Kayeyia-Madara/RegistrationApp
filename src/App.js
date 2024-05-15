@@ -65,7 +65,7 @@ function App() {
           <input type="text" id="residence" name="residence" value={formData.residence} onChange={handleChange} required />
         </div>
         <div>
-          <label htmlFor="fellowshipName">House of Prophets Fellowship Name:</label>
+          <label htmlFor="fellowshipName">Micro-Church:</label>
           <input type="text" id="fellowshipName" name="fellowshipName" value={formData.fellowshipName} onChange={handleChange} required />
         </div>
         <button type="submit">Register</button>
