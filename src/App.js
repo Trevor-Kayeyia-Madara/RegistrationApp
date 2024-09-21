@@ -25,8 +25,19 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      // eslint-disable-next-line no-unused-vars
       const response = await axios.post('https://registrationbackend-1.onrender.com/register', formData);
-      toast.success(response.data.message); // Toast for success
+            // Trigger success toast with custom message
+            toast.success(`Thank you, ${formData.firstName}! You have successfully registered for the Daughters of Faith Conference 2024.`, {
+              position: "top-center",
+              autoClose: 5000, // Auto close after 5 seconds
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            });
+      
       setFormData({
         firstName: '',
         surname: '',
