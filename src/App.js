@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>MAN-UP CONFERENCE 2024</h1>
+      <h1>Daughters of Faith Conference 2024 28th September</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="firstName">First Name:</label>
@@ -68,7 +68,7 @@ function App() {
           <label htmlFor="fellowshipName">Micro-Church:</label>
           <input type="text" id="fellowshipName" name="fellowshipName" value={formData.fellowshipName} onChange={handleChange} required />
         </div>
-        <button type="submit">Register</button>
+        <button type="submit">Register to attend. God Bless You</button>
       </form>
       <ToastContainer />
     </div>
