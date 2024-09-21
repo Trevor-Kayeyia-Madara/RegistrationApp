@@ -25,7 +25,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://registrationbackend-amdh.onrender.com/register', formData);
+      const response = await axios.post('https://registrationbackend-1.onrender.com/register', formData);
       toast.success(response.data.message);
       setFormData({
         firstName: '',
