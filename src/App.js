@@ -26,7 +26,7 @@ function App() {
     e.preventDefault();
     try {
       const response = await axios.post('https://registrationbackend-1.onrender.com/register', formData);
-      toast.success(response.data.message);
+      toast.success(response.data.message); // Toast for success
       setFormData({
         firstName: '',
         surname: '',
@@ -36,7 +36,7 @@ function App() {
         fellowshipName: ''
       });
     } catch (error) {
-      toast.error('An error occurred. Please try again.');
+      toast.error('An error occurred. Please try again.'); // Toast for error
     }
   };
 
